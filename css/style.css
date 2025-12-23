@@ -24,6 +24,8 @@
   font-display: swap;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     /* font-family: "JacquesFrancoisShadow"; */
     font-family: "Roboto";
@@ -497,5 +499,6 @@ a {
     animation: footer-teeth 26s infinite linear;
     animation-delay: -8s;
 }
+
 
 
