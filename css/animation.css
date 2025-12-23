@@ -1,0 +1,146 @@
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes teeth-down {
+	from { transform: translate(0, 0); opacity: 0; }
+	5% { transform: rotate(10deg); opacity: 1; }
+    10% { transform: rotate(-10deg); }
+    15% { transform: rotate(10deg); }
+    20% { transform: rotate(-10deg); }
+	30% { transform: translate(-10px, 100px)  rotate(10deg); }
+	40% { transform: translate(10px, 220px)  rotate(-10deg); }
+    50% { transform: translate(-10px, 340px)  rotate(10deg); }
+    60% { transform: translate(10px, 460px)  rotate(-10deg); }
+    70% { transform: translate(-10px, 580px)  rotate(10deg); }
+    80% { transform: translate(10px, 700px)  rotate(-10deg); opacity: 1; }
+    90% { transform: translate(-10px, 820px)  rotate(10deg); opacity: 0; }
+	to  { transform: translate(0, 1080px) rotate(0deg); opacity: 0;  }
+}
+
+@keyframes teeth-down2 {
+	from { transform: translate(0, 0); opacity: 0; }
+	5% { transform: rotate(10deg); opacity: 1; }
+    10% { transform: rotate(-10deg); }
+    15% { transform: rotate(10deg); }
+    20% { transform: rotate(-10deg); }
+	30% { transform: translate(-10px, 100px)  rotate(10deg); }
+	40% { transform: translate(10px, 220px)  rotate(-10deg); }
+    50% { transform: translate(-10px, 340px)  rotate(10deg); }
+    60% { transform: translate(10px, 460px)  rotate(-10deg); opacity: 1; }
+    70% { transform: translate(-10px, 580px)  rotate(10deg); opacity: 0; }
+	to  { transform: translate(0, 1080px) rotate(0deg); opacity: 0;  }
+}
+
+@keyframes subtitle {
+    0%, 100% {
+        background-image: linear-gradient(to bottom, #999998, #D7F0BC);
+    }
+    20%, 80% {
+        background-image: linear-gradient(to bottom, #7EBE3A, #D9FF00);
+    }
+}
+
+@keyframes syringe1 {
+    10%, 100% {
+        transform: translate(0, 0)  rotate(0deg);
+    }
+    50%, 70% {
+        transform: translate(220px, 0)  rotate(45deg);
+    }
+}
+@keyframes syringe2 {
+    10%, 100% {
+        transform: translate(0, 0)  rotate(0deg);
+    }
+    50%, 70% {
+        transform: translate(-220px, 0)  rotate(-45deg);
+    }
+}
+
+@keyframes man {
+    0%, 30% {
+        transform: translate(0, -100px)  rotate(20deg); opacity: 1;
+    }
+    50% {
+        transform: translate(-420px, 0)  rotate(-5deg); opacity: 1;
+    }
+    58% {
+        transform: translate(-460px, 10px)  rotate(-8deg); opacity: 0;
+    }
+    100% {
+        transform: translate(-460px, 10px)  rotate(-10deg); opacity: 0;
+    }
+}
+
+@keyframes breath1 {
+    0%, 15%, 100% { opacity: 0; }
+    25% { opacity: 1; }
+    90% { opacity: 1; }
+}
+@keyframes breath2 {
+    0%, 25%, 100% { opacity: 0; }
+    30% { opacity: 1; }
+    90% { opacity: 1; }
+}
+@keyframes breath3 {
+    0%, 30%, 100% { opacity: 0; }
+    35% { opacity: 1; }
+    90% { opacity: 1; }
+}
+@keyframes breath4 {
+    0%, 35%, 100% { opacity: 0; }
+    40% { opacity: 1; }
+    90% { opacity: 1; }
+}
+
+@keyframes smile-text {
+    0%, 100% { opacity: 0; }
+    20%, 80% { opacity: 1; }
+}
+@keyframes smile {
+    0%, 20%, 100% { opacity: 0; }
+    40%, 80% { opacity: 1; }
+}
+
+@keyframes instrument-teeth {
+    0%, 100% { transform: translate(0, -200px)  rotate(0deg); }
+    30%, 90% { transform: translate(10px, 60px)  rotate(5deg); }
+}
+@keyframes instrument-head {
+    0%, 100% { transform: translate(0, 0)  rotate(0deg); }
+    30% { transform: translate(40px, 60px)  rotate(0deg); }
+    40% { transform: translate(40px, 60px)  rotate(5deg); }
+    80% { transform: translate(320px, 30px)  rotate(-10deg); }
+    90% { transform: translate(320px, 30px)  rotate(-20deg); }
+}
+
+/* @keyframes footer-teeth1 {
+    0%, 100% { transform: translate(140px, 10px)  rotate(0deg); opacity: .8; scale: .9; }
+    10% { transform: translate(160px, 20px) rotate(80deg); opacity: 1; scale: 1; }
+    20% { transform: translate(10px, 0px)  rotate(160deg); opacity: .6; scale: .8; }
+    30% { transform: translate(140px, 30px) rotate(240deg); opacity: .8; scale: .9; }
+    40% { transform: translate(260px, -30px)  rotate(160deg); opacity: 1; scale: 1.1; }
+    50% { transform: translate(100px, 30px) rotate(80deg); opacity: 1; scale: 1; }
+    60% { transform: translate(160px, 60px)  rotate(0deg); opacity: .6; scale: .7; }
+    70% { transform: translate(240px, 10px)  rotate(-120deg); opacity: .8; scale: .9; }
+    80% { transform: translate(10px, 0px)  rotate(-200deg); opacity: 1; scale: 1.1; }
+    90% { transform: translate(60px, 30px)  rotate(-100deg); opacity: 1; scale: 1.1; }
+} */
+@keyframes footer-teeth {
+    0%, 100% { transform: translate(40px, 10px)  rotate(0deg); opacity: .8; scale: .9; }
+    10% { transform: translate(60px, 20px) rotate(80deg); opacity: 1; scale: 1; }
+    20% { transform: translate(0px, 0px)  rotate(160deg); opacity: .6; scale: .8; }
+    30% { transform: translate(40px, 30px) rotate(240deg); opacity: .8; scale: .9; }
+    40% { transform: translate(60px, -30px)  rotate(160deg); opacity: 1; scale: 1.1; }
+    50% { transform: translate(10px, 30px) rotate(80deg); opacity: 1; scale: 1; }
+    60% { transform: translate(60px, 60px)  rotate(0deg); opacity: .6; scale: .7; }
+    70% { transform: translate(40px, 10px)  rotate(-120deg); opacity: .8; scale: .9; }
+    80% { transform: translate(0px, 0px)  rotate(-200deg); opacity: 1; scale: 1.1; }
+    90% { transform: translate(20px, 30px)  rotate(-100deg); opacity: 1; scale: 1.1; }
+}
