@@ -27,10 +27,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    /* font-family: "JacquesFrancoisShadow"; */
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     color: #fff;
     background-color: #DA4C4C;
+    overflow-x: hidden;
 }
 
 body, h1, h2, h3, p {
@@ -64,6 +64,8 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+/* ------------          01 header            ------------- */
 
 .header {
     padding: 11px 20px;
@@ -107,10 +109,6 @@ a {
 
 /* ------------          02 services            ------------- */
 
-.services {
-
-}
-
 .slider {
     display: flex;
     width: 100%;
@@ -148,28 +146,26 @@ a {
     position: absolute;
     left: 0;
     bottom: 0; 
+    width: 84%;
 }
 .slider__img-jaw {
     position: absolute;
-    left: 20%;
-    top: 30%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ------------          03 promo            ------------- */
 
 .promo {
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-bottom: 156px;
 }
 .promo__line {
     text-align: center;
     animation: marquee 20s infinite linear;
     animation-delay: -20s;
-    /* cursor: help; */
-}
-.promo__line:hover  {
-    /* animation-play-state: paused; */
 }
 .promo__title, .promo__info {
     font-family: "Inter Black";
@@ -206,7 +202,8 @@ a {
 .teeth__animation {
     position: relative;
     width: 776px;
-    height: 980px;
+    max-width: 100%;
+    height: 800px;
     margin: auto;
     overflow: hidden;
 }
@@ -237,10 +234,17 @@ a {
     animation-delay: -2s;
 }
 
-/* ------------          05 action            ------------- */
-.promo, .teeth, .services {
-    /* display: none; */
+.teeth__shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(0deg,rgba(218, 76, 76, 1) 0%, rgba(218, 76, 76, 0) 100%);
 }
+
+/* ------------          05 action            ------------- */
+
 .action {
     text-align: center;
     margin: 127px 0;
@@ -288,13 +292,14 @@ a {
     position: absolute;
     top: 0;
     height: 800px;
+    transform-origin: center bottom;
 }
 .syringes__item_left {
-    left: 30%;
+    left: 26%;
     animation: syringe1 4s infinite linear;
 }
 .syringes__item_right {
-    right: 30%;
+    right: 26%;
     animation: syringe2 4s infinite linear;
 }
 
@@ -302,18 +307,17 @@ a {
 /* ------------          07 breath            ------------- */
 
 .breath {
+    margin-top: 60px;
     height: 800px;
     position: relative;
 }
 .breath__man, .breath__jaw, .breath__item {
     position: absolute;
-
 }
 .breath__man {
     bottom: 0;
     left: 400px;
     width: 540px;
-    height: 388px;
     animation: man 4s infinite linear;
 }
 .breath__jaw {
@@ -349,7 +353,6 @@ a {
     text-align: center;
     position: relative;
     padding: 270px 0;
-    
 }
 .smile__subtitle {
     animation: smile-text 6s infinite linear;
@@ -393,7 +396,7 @@ a {
     height: 800px;
     background-image: url(../img/head.png);
     background-size: contain;
-    background-position: left bottom;
+    background-position: right bottom;
     background-repeat: no-repeat;
 }
 .dental-instruments__teeth-img {
@@ -418,10 +421,6 @@ a {
     position: absolute;
     width: 140px;
     height: 215px;
-    background-image: url(../img/footer-teeth.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .footer__teeth_1 {
     top: 7%;
@@ -432,73 +431,62 @@ a {
 .footer__teeth_2 {
     top: 35%;
     left: 4%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -16s;
 }
 .footer__teeth_3 {
     top: 74%;
     left: 16%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -9s;
 }
 .footer__teeth_4 {
     top: 9%;
     left: 30%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -13s;
 }
 .footer__teeth_5 {
     top: 34%;
     left: 40%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -7s;
 }
 .footer__teeth_6 {
     top: 64%;
     left: 32%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -2s;
 }
 .footer__teeth_7 {
     top: 75%;
     left: 50%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -19s;
 }
 .footer__teeth_8 {
     top: 25%;
     right: 35%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -4s;
 }
 .footer__teeth_9 {
     top: 17%;
     right: 12%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -14s;
 }
 .footer__teeth_10 {
     top: 45%;
     right: 20%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -26s;
 }
 .footer__teeth_11 {
     top: 70%;
     right: 11%;
-    transform: rotate(0deg);
     animation: footer-teeth 26s infinite linear;
     animation-delay: -8s;
 }
-
 
 
